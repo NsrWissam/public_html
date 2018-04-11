@@ -12,8 +12,8 @@ if(!isset($_SESSION)) {
 <body>
 <?php include 'C:\wamp64\www\public_html\templates\navbar.php'; ?>
 
-<div class="container-fluid">
-    <div class="row">
+<div class="container-fluid h-89">
+    <div class="row h-100">
 
         <?php include 'C:\wamp64\www\public_html\templates\sidebar.php'; ?>
 

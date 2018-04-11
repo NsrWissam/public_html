@@ -6,7 +6,6 @@
                 <i class="fa fa-caret-down"></i></a>
         <div class="row">
             <div class="collapse" id="collapse1">
-
                 <a class="nav-link-sidebar" href="#">Travel</a>
                 <a class="nav-link-sidebar" href="#">Technology</a>
                 <a class="nav-link-sidebar" href="#">Photography</a>
@@ -19,7 +18,6 @@
                 Archive <i class="fa fa-caret-down"></i></a>
         <div class="row">
             <div class="collapse" id="collapse2">
-
                 <a class="nav-link-sidebar" href="#">January</a>
                 <a class="nav-link-sidebar" href="#">February</a>
                 <a class="nav-link-sidebar" href="#">March</a>

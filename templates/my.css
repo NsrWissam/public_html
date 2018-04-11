@@ -34,3 +34,7 @@ p.navbar-text{
     padding: 0.3rem 1rem;
     color: white;
 }
+
+.h-89{
+    height: 89% !important;
+}
