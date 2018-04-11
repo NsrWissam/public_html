@@ -2,7 +2,7 @@
 include_once '../database/BlogpostDB.php';
 include_once '../database/UserDB.php';
 include_once '../database/CategoryDB.php';
-if(!isset($_SESSION)) {
+if (!isset($_SESSION)) {
     session_start();
 }
 ?>

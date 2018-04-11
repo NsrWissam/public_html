@@ -2,18 +2,22 @@
 include_once "../data/Category.php";
 include_once "DatabaseFactory.php";
 session_start();
-class CategoryDB {
 
-    private static function getConnection(){
+class CategoryDB
+{
+
+    private static function getConnection()
+    {
         return DatabaseFactory::getDatabase();
     }
 
-    public static function getAll(){
+    public static function getAll()
+    {
 //        Execute query
         $results = self::getConnection()->executeQuery("SELECT * FROM category");
 //        Prepare array to return to frontend
         $resultsArray = array();
-        for($i = 0; $i < $results->num_rows; $i++ ){
+        for ($i = 0; $i < $results->num_rows; $i++) {
             //Retrieves the current selected row
             $row = $results->fetch_array();
             //Make a book
@@ -24,7 +28,8 @@ class CategoryDB {
         return $resultsArray;
     }
 
-    public static function getByID($id){
+    public static function getByID($id)
+    {
         $results = self::getConnection()->executeQuery("SELECT * FROM category where id= $id");
 
         $row = $results->fetch_array();
@@ -38,11 +43,13 @@ class CategoryDB {
             array($category->name));
     }
 
-    public static function convertRowToObject($row){
+    public static function convertRowToObject($row)
+    {
         return new Category(
             $row['id'],
             $row['name']);
     }
 
 }
+
 ?>

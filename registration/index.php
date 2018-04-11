@@ -2,6 +2,12 @@
 if(!isset($_SESSION)) {
     session_start();
 }
+if($_SESSION['logged_in'] == true){
+    $_SESSION['message'] = "You are already logged in. If you wish to create a new account, log out first";
+    $_SESSION['report_code']='error';
+    header('location: http://localhost/public_html/');
+    exit;
+}
 require_once '../database/UserDB.php';
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (isset($_POST['register'])) {

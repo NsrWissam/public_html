@@ -5,6 +5,8 @@ if(!isset($_SESSION)){
     session_start();
 }
 if($_SESSION['logged_in'] == false || !isset($_SESSION['logged_in'])){
+    $_SESSION['message'] = "You are not logged in yet. If you wish to create a blog post, log in first";
+    $_SESSION['report_code']='error';
     header('location: http://localhost/public_html/');
     exit;
 }

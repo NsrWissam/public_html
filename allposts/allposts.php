@@ -1,6 +1,6 @@
 <div class="container-fluid">
     <h1>All blog posts</h1>
-    <hr />
+    <hr/>
 
     <section class="row text-center placeholders">
         <div class="col-6 col-sm-3 placeholder">
@@ -29,8 +29,12 @@
         </div>
     </section>
 </div>
+
+
 <div class="container-fluid">
-    <p>Show the data</p>
+    <div class="mt-5 mb-2">
+        <h2>Overview</h2>
+    </div>
     <table>
         <tr>
             <td>Title</td>
@@ -58,7 +62,4 @@
         }
         ?>
     </table>
-</div>
-<div class="mt-5">
-    <h2>Next Section title</h2>
 </div>
