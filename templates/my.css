@@ -1,0 +1,36 @@
+.pr-6{
+    padding-right: 3.5rem !important;
+}
+a.nav-link{
+    color: white;
+}
+
+p.navbar-text{
+    color: white;
+}
+
+.cw{
+    color: white;
+}
+
+.clg{
+    color: lightgrey;
+}
+
+.myForm{
+    align-content: center;
+    text-align: center;
+}
+
+.h-20{
+    height: 20%;
+}
+
+.sidebar{
+    padding-left: 2em;
+}
+.nav-link-sidebar{
+    display: block;
+    padding: 0.2rem 1rem;
+    color: white;
+}
