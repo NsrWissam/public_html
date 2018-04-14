@@ -27,17 +27,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </head>
 <body style="background-color: lightgrey">
 <?php include 'C:\wamp64\www\public_html\templates\navbar.php'; ?>
-<div class="container-fluid h-89">
-    <div class="row h-100">
-        <?php include 'C:\wamp64\www\public_html\templates\sidebar.php'; ?>
-        <main class="col-sm-9 col-md-10 pt-3">
-            <div class="row">
-                <?php
-                include 'C:\wamp64\www\public_html\registration\register.php';
-                ?>
-            </div>
-        </main>
-    </div>
+<div class="container-fluid row">
+    <?php include 'C:\wamp64\www\public_html\templates\sidebar.php'; ?>
+    <main class="col-sm-9 col-md-10 pt-3">
+        <?php
+        include 'C:\wamp64\www\public_html\registration\register.php';
+        ?>
+    </main>
 </div>
 <?php
 include 'C:\wamp64\www\public_html\templates\footer.php';

@@ -27,7 +27,10 @@ p.navbar-text{
 }
 
 .sidebar{
-    padding-left: 2em;
+    padding: 1.5em;
+    background-color: #5a6268;
+    color: white;
+    min-height: 100%;
 }
 .nav-link-sidebar{
     display: block;
@@ -36,5 +39,10 @@ p.navbar-text{
 }
 
 .h-89{
-    height: 89% !important;
+    min-height: 89% !important;
+}
+
+.sub-title{
+    text-align: center;
+    text-decoration: underline;
 }

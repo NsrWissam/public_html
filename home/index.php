@@ -1,7 +1,9 @@
 <?php
-if(!isset($_SESSION)) {
+if (!isset($_SESSION)) {
     session_start();
 }
+include_once '../database/BlogpostDB.php';
+include_once '../database/CategoryDB.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,19 +14,14 @@ if(!isset($_SESSION)) {
 <body>
 <?php include 'C:\wamp64\www\public_html\templates\navbar.php'; ?>
 
-<div class="container-fluid h-89">
-    <div class="row h-100">
+<div class="container-fluid h-89 row">
+    <main class="col-12 pt-3">
+        <?php
+        include 'C:\wamp64\www\public_html\templates\report.php';
 
-        <?php include 'C:\wamp64\www\public_html\templates\sidebar.php'; ?>
-
-        <main class="col-sm-9 col-md-10 pt-3">
-            <?php
-            include 'C:\wamp64\www\public_html\templates\report.php';
-
-            include 'C:\wamp64\www\public_html\home\home.php';
-            ?>
-        </main>
-    </div>
+        include 'C:\wamp64\www\public_html\home\home.php';
+        ?>
+    </main>
 </div>
 <?php
 include 'C:\wamp64\www\public_html\templates\footer.php';

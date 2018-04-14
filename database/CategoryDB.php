@@ -1,8 +1,9 @@
 <?php
 include_once "../data/Category.php";
 include_once "DatabaseFactory.php";
-session_start();
-
+if(!isset($_SESSION)) {
+    session_start();
+}
 class CategoryDB
 {
 

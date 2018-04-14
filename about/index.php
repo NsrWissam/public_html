@@ -1,5 +1,5 @@
 <?php
-if(!isset($_SESSION)) {
+if (!isset($_SESSION)) {
     session_start();
 }
 ?>
@@ -14,18 +14,15 @@ if(!isset($_SESSION)) {
 <body>
 <?php include 'C:\wamp64\www\public_html\templates\navbar.php'; ?>
 
-<div class="container-fluid h-89">
-    <div class="row h-100">
-
-        <?php include 'C:\wamp64\www\public_html\templates\sidebar.php'; ?>
-        <main class="col-sm-9 col-md-10 pt-3">
+<div class="container-fluid h-89 row">
+    <?php include 'C:\wamp64\www\public_html\templates\sidebar.php'; ?>
+    <main class="col-sm-9 col-md-10 pt-3">
         <?php
         include 'C:\wamp64\www\public_html\templates\report.php';
 
         include 'C:\wamp64\www\public_html\about\about.php';
         ?>
-        </main>
-    </div>
+    </main>
 </div>
 <?php
 include 'C:\wamp64\www\public_html\templates\footer.php';

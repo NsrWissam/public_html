@@ -1,16 +1,7 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: root
- * Date: 19.03.18
- * Time: 01:18
- */
-?>
-
-<footer class="bg-dark container-fluid fixed-bottom">
+<footer class="bg-dark container-fluid">
     <div class="row">
         <div class="col-12 text-center clg">
-            My Blog / <?php echo $currentTab; ?><br />
+            My Blog / <?php echo $currentTab; ?><br/>
             Proudly powered by Bootstrap v4.0.
         </div>
     </div>

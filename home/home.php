@@ -1,31 +1,66 @@
 <div class="container-fluid">
-    <h1>Home Page</h1>
+
+    <h1>My Blog</h1>
     <hr/>
-    <section class="row text-center placeholders">
-        <div class="col-6 col-sm-4 placeholder">
-            <img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200"
-                 class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
-            <h4>Blog 1</h4>
-            <div class="text-muted">Something else</div>
+
+    <h2 class="sub-title pb-4 pt-4">Most Popular Posts</h2>
+
+    <?php
+    $list = BlogpostDB::getMostPopular();
+    foreach ($list as $blogpost) {
+        $author = UserDB::getByID($blogpost->author_id);
+        $category = CategoryDB::getByID($blogpost->category_id)
+        ?>
+        <div class="pb-5">
+                <div class="media">
+                    <a class="pull-left pr-2" href="#">
+                        <img class="media-object img-thumbnail rounded" src="<?php echo $blogpost->image; ?>"
+                             alt="Blogpost image" height="300px" width="300px">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading"><?php echo $blogpost->title; ?></h4>
+                        <p class="text-right">By <?php echo $author->first_name . "," . $author->last_name ?></p>
+                        <p align="justify"><?php echo substr($blogpost->content, 0, 500) . "..."; ?></p>
+
+                        <span><i class="fa fa-calendar"
+                                 aria-hidden="true"></i> <?php echo $blogpost->postdate; ?> </span>
+                        | <?php echo $category->name; ?>
+                    </div>
+                </div>
         </div>
-        <div class="col-6 col-sm-4 placeholder">
-            <img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200"
-                 class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
-            <h4>Blog 2</h4>
-            <span class="text-muted">Something else</span>
-        </div>
-        <div class="col-6 col-sm-4 placeholder">
-            <img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200"
-                 class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
-            <h4>Blog 3</h4>
-            <span class="text-muted">Something else</span>
-        </div>
-    </section>
+        <?php
+    }
+    ?>
 </div>
 <div class="container-fluid">
-    <div class="mt-5">
-        <h2>Next Section title</h2>
-    </div>
+    <h2 class="sub-title pb-4 pt-4"><?php echo date("F") ?>'s Posts</h2>
+
+    <?php
+    $list = BlogpostDB::getRandom();
+    foreach ($list as $blogpost) {
+        $author = UserDB::getByID($blogpost->author_id);
+        $category = CategoryDB::getByID($blogpost->category_id)
+        ?>
+        <div class="pb-5">
+                <div class="media">
+                    <a class="pull-left pr-2" href="#">
+                        <img class="media-object img-thumbnail rounded" src="<?php echo $blogpost->image; ?>"
+                             alt="Blogpost image" height="300px" width="300px">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading"><?php echo $blogpost->title; ?></h4>
+                        <p class="text-right">By <?php echo $author->first_name . "," . $author->last_name ?></p>
+                        <p align="justify"><?php echo substr($blogpost->content, 0, 500) . "..."; ?></p>
+
+                        <span><i class="fa fa-calendar"
+                                 aria-hidden="true"></i> <?php echo $blogpost->postdate; ?> </span>
+                        | <?php echo $category->name; ?>
+                    </div>
+                </div>
+        </div>
+        <?php
+    }
+    ?>
 
 
 </div>

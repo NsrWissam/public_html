@@ -36,6 +36,39 @@ class BlogpostDB {
         return $blogpost;
     }
 
+    public static function getMostPopular(){
+//        Execute query
+        $results = self::getConnection()->executeQuery("SELECT blogpost.*, count(comment.blogpost_id) as nr_of_comments from blogpost left join comment on (blogpost.id = comment.blogpost_id) group by blogpost.id ORDER BY nr_of_comments DESC LIMIT 3;");
+//        Prepare array to return to frontend
+        $resultsArray = array();
+        for($i = 0; $i < $results->num_rows; $i++ ){
+            //Retrieves the current selected row
+            $row = $results->fetch_array();
+            //Make a book
+            $blogpost = self::convertRowToObject($row);
+            //add book to result array
+            $resultsArray[$i] = $blogpost;
+        }
+        return $resultsArray;
+    }
+
+    public static function getRandom()
+    {
+//        Execute query
+        $results = self::getConnection()->executeQuery("SELECT * FROM blogpost WHERE  MONTH(postdate) = MONTH(CURRENT_DATE()) AND YEAR(postdate) = YEAR(CURRENT_DATE()) ORDER BY RAND() LIMIT 3;");
+//        Prepare array to return to frontend
+        $resultsArray = array();
+        for ($i = 0; $i < $results->num_rows; $i++) {
+            //Retrieves the current selected row
+            $row = $results->fetch_array();
+            //Make a blogpost
+            $blogpost = self::convertRowToObject($row);
+            //add blogpost to result array
+            $resultsArray[$i] = $blogpost;
+        }
+        return $resultsArray;
+    }
+
     public static function insert($blogpost){
         var_dump($blogpost);
         $query = "INSERT INTO blogpost(title,author_id,content,image,category_id) VALUES ('?','?','?','?','?');";

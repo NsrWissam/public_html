@@ -17,10 +17,9 @@ if (!isset($_SESSION)) {
 <body>
 <?php include 'C:\wamp64\www\public_html\templates\navbar.php'; ?>
 
-<div class="container-fluid h-89">
-    <div class="row h-100">
+<div class="container-fluid row" style="height: auto;" >
+    <?php include 'C:\wamp64\www\public_html\templates\sidebar.php'; ?>
 
-        <?php include 'C:\wamp64\www\public_html\templates\sidebar.php'; ?>
         <main class="col-sm-9 col-md-10 pt-3">
             <?php
             include 'C:\wamp64\www\public_html\templates\report.php';
@@ -28,7 +27,6 @@ if (!isset($_SESSION)) {
             include 'C:\wamp64\www\public_html\allposts\allposts.php';
             ?>
         </main>
-    </div>
 </div>
 <?php
 include 'C:\wamp64\www\public_html\templates\footer.php';
