@@ -51,6 +51,9 @@ class CategoryDB
             $row['name']);
     }
 
+    public static function deleteCatByID($id){
+        return self::getConnection()->executeQuery("DELETE FROM category where id=$id");
+    }
 }
 
 ?>

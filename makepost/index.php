@@ -26,9 +26,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </head>
 <body>
 <?php include 'C:\wamp64\www\public_html\templates\navbar.php'; ?>
-<div class="container-fluid h-89 row">
+<div class="container-fluid min-h-89 row">
     <?php include 'C:\wamp64\www\public_html\templates\sidebar.php'; ?>
-    <main class="col-sm-9 col-md-10 pt-3 pl-3">
+    <main class="col-sm-12 col-md-12 col-lg-10 col-xl-10 pt-3">
         <?php
         include 'C:\wamp64\www\public_html\templates\report.php';
 

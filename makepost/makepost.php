@@ -21,7 +21,7 @@
             </tr>
             <tr class="">
                 <td align="right"><label for="image">Image</label></td>
-                <td align="left"><input class="w-100" name='image' id="image" type="text" required autocomplete="off"/>
+                <td align="left"><input class="w-100" name='image' id="image" type="url" required autocomplete="off"/>
                 </td>
             </tr>
             <tr class="">

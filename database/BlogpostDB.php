@@ -27,7 +27,7 @@ class BlogpostDB {
     }
 
     public static function getByID($id){
-        $results = self::getConnection()->executeQuery("SELECT * FROM blogpost where id= $id");
+        $results = self::getConnection()->executeQuery("SELECT * FROM blogpost where id=$id");
 
             $row = $results->fetch_array();
             //Make a book
@@ -52,6 +52,15 @@ class BlogpostDB {
         return $resultsArray;
     }
 
+    public static function getNOCbyID($id){
+        $results = self::getConnection()->executeQuery("SELECT count(comment.blogpost_id) as nr_of_comments from blogpost left join comment on (blogpost.id = comment.blogpost_id) WHERE blogpost.id = $id group by blogpost.id DESC LIMIT 3;");
+
+        $row = $results->fetch_array();
+        //Make a book
+
+        return $row[0];
+    }
+
     public static function getRandom()
     {
 //        Execute query
@@ -70,7 +79,7 @@ class BlogpostDB {
     }
 
     public static function insert($blogpost){
-        var_dump($blogpost);
+        //var_dump($blogpost);
         $query = "INSERT INTO blogpost(title,author_id,content,image,category_id) VALUES ('?','?','?','?','?');";
         return self::getConnection()->executeQuery( $query ,array($blogpost->title,$blogpost->author_id,
                 $blogpost->content,$blogpost->image,
@@ -126,6 +135,11 @@ class BlogpostDB {
                 exit;
             }
         }
+    }
+
+    public static function deletePostByID($id){
+        return self::getConnection()->executeQuery("DELETE FROM blogpost where id=$id");
+
     }
 }
 ?>

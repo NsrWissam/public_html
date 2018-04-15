@@ -2,7 +2,7 @@
 include_once '../database/UserDB.php';
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (isset($_POST['login'])) {
-        UserDB::login($_POST['email'], $_POST['password']);
+        UserDB::login($_POST['email'], $_POST['password'], $_POST['currentTab']);
     }
 }
 $currentTab = $_SERVER['REQUEST_URI'];
@@ -36,9 +36,16 @@ $currentTab = $myarray[2];
                 <?php endif; ?>
             </ul>
             <ul class="nav navbar-nav flex-row justify-content-between ml-auto">
-                <li class="nav-item order-2 order-md-1">
-                    <a href="#" class="nav-link" title="settings"><i class="fa fa-cog fa-fw fa-lg"></i></a>
-                </li>
+                <?php if (isset($_SESSION['isadmin'])) {
+                    if ($_SESSION['isadmin'] == 1): ?>
+                        <li class="nav-item order-2 order-md-1">
+                            <a href="http://localhost/public_html/manage" class="nav-link" title="Manage"><i
+                                        class="fa fa-cog fa-fw fa-lg"></i></a>
+                        </li>
+                    <?php
+                    endif;
+                }
+                 ?>
                 <?php if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] == false): ?>
                     <li class="dropdown nav-item order-1 pr-3">
                         <button type="button" id="dropdownMenu1" data-toggle="dropdown"
@@ -63,6 +70,7 @@ $currentTab = $myarray[2];
                                             <small>Stay logged in?</small>
                                         </label>
                                     </div>
+                                    <input hidden name="currentTab" id="currentTab" type="text" value="<?php echo $currentTab ?>" >
                                     <div class="form-group">
                                         <button name="login" type="submit"
                                                 class="btn btn-primary btn-block">Log in
@@ -86,7 +94,7 @@ $currentTab = $myarray[2];
                 <?php elseif ($_SESSION['logged_in'] == true): ?>
                     <li>
                     <span class="navbar-text">
-                        <?php echo "Welcome, " . $_SESSION['first_name'] . " " . $_SESSION['last_name'] . " " . $_SESSION['user_id'] . "!" ?>
+                        <?php echo "Welcome, " . $_SESSION['first_name'] . " " . $_SESSION['last_name'] . "!  ID:" . $_SESSION['user_id'] ?>
                     </span>
                     </li>
                     <li class="dropdown nav-item order-1 pr-3">

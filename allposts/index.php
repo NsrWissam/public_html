@@ -12,15 +12,16 @@ if (!isset($_SESSION)) {
 
 <?php include 'C:\wamp64\www\public_html\templates\header.php'; ?>
 <head>
+    <meta charset="UTF-8">
     <title>All Blogposts</title>
 </head>
 <body>
 <?php include 'C:\wamp64\www\public_html\templates\navbar.php'; ?>
 
-<div class="container-fluid row" style="height: auto;" >
+<div class="container-fluid row min-h-89" >
     <?php include 'C:\wamp64\www\public_html\templates\sidebar.php'; ?>
 
-        <main class="col-sm-9 col-md-10 pt-3">
+        <main class="col-sm-12 col-md-12 col-lg-10 col-xl-10 pt-3">
             <?php
             include 'C:\wamp64\www\public_html\templates\report.php';
 

@@ -54,8 +54,8 @@
                     </div>
                     <div class="col-10">
                         <input value="" class="form-control" type="password"
-                               name="registerConfirmPassword" placeholder="Confirm password"
-                               id="registerConfirmPassword">
+                               name="ConfirmPasw" placeholder="Confirm password"
+                               id="ConfirmPasw">
                     </div>
                     <button id="register" name="register" class="btn-secondary btn-block mt-3"
                             type="submit">

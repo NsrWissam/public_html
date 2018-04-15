@@ -12,7 +12,7 @@ if (isset($_SESSION['logged_in'])) {
 }
 require_once '../database/UserDB.php';
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    if (isset($_POST['register'])) {
+    if (isset($_POST['register']) && ($_POST['password']==$_POST['ConfirmPasw'])) {
         $user = new User("", $_POST['first_name'], $_POST['last_name'], $_POST['email'], $_POST['password'], "", "", "");
         UserDB::register($user);
     }
@@ -27,9 +27,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </head>
 <body style="background-color: lightgrey">
 <?php include 'C:\wamp64\www\public_html\templates\navbar.php'; ?>
-<div class="container-fluid row">
+<div class="container-fluid row min-h-89 mr-0">
     <?php include 'C:\wamp64\www\public_html\templates\sidebar.php'; ?>
-    <main class="col-sm-9 col-md-10 pt-3">
+    <main class="col-sm-12 col-md-12 col-lg-10 col-xl-10 pt-3">
         <?php
         include 'C:\wamp64\www\public_html\registration\register.php';
         ?>

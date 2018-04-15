@@ -54,13 +54,13 @@ class UserDB{
             $row['isadmin']);
     }
 
-    public static function login($email, $password){
+    public static function login($email, $password, $currentTab){
         if(!empty($email)&&!empty($password)){
            $result = self::getConnection()->executeQuery("SELECT * FROM user WHERE email='$email'");
             if ( $result->num_rows == 0 ){ // User doesn't exist
                 $_SESSION['message'] = "User with that email doesn't exist!";
                 $_SESSION['report_code']='error';
-                header("location: http://localhost/public_html/");
+                header("location: http://localhost/public_html/".$currentTab."/");
                 exit;
             }
             else { // User exists
@@ -75,17 +75,18 @@ class UserDB{
                     $_SESSION['first_name'] = $user['first_name'];
                     $_SESSION['last_name'] = $user['last_name'];
                     $_SESSION['active'] = $user['active'];
+                    $_SESSION['isadmin'] = $user['isadmin'];
 
 //                  This is how we'll know the user is logged in
                     $_SESSION['logged_in'] = true;
 
-                    header("location: http://localhost/public_html/");
+                    header("location: http://localhost/public_html/".$currentTab."/");
                     exit;
                 }
                 else {
                     $_SESSION['message'] = "You have entered wrong password, try again!";
                     $_SESSION['report_code']='error';
-                    header("location: http://localhost/public_html/");
+                    header("location: http://localhost/public_html/".$currentTab."/");
                     exit;
                 }
             }

@@ -20,6 +20,7 @@ class Blogpost{
      */
     public function __construct($id, $title, $author_id, $content, $image, $category_id, $postdate)
     {
+
         $this->id = $id;
         $this->title = $title;
         $this->author_id = $author_id;

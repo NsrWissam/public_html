@@ -27,7 +27,7 @@ p.navbar-text{
 }
 
 .sidebar{
-    padding: 1.5em;
+    padding: 1.8em;
     background-color: #5a6268;
     color: white;
     min-height: 100%;
@@ -38,7 +38,7 @@ p.navbar-text{
     color: white;
 }
 
-.h-89{
+.min-h-89{
     min-height: 89% !important;
 }
 

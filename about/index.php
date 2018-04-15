@@ -7,25 +7,26 @@ if (!isset($_SESSION)) {
 <!DOCTYPE html>
 <html lang="en">
 
-<?php include 'C:\wamp64\www\public_html\templates\header.php'; ?>
+<?php include '..\templates\header.php'; ?>
 <head>
+    <meta charset="UTF-8">
     <title>About</title>
 </head>
 <body>
-<?php include 'C:\wamp64\www\public_html\templates\navbar.php'; ?>
+<?php include '..\templates\navbar.php'; ?>
 
-<div class="container-fluid h-89 row">
-    <?php include 'C:\wamp64\www\public_html\templates\sidebar.php'; ?>
-    <main class="col-sm-9 col-md-10 pt-3">
+<div class="container-fluid min-h-89 row">
+    <?php include '..\templates\sidebar.php'; ?>
+    <main class="col-sm-12 col-md-12 col-lg-10 col-xl-10 pt-3">
         <?php
-        include 'C:\wamp64\www\public_html\templates\report.php';
+        include '..\templates\report.php';
 
-        include 'C:\wamp64\www\public_html\about\about.php';
+        include '..\about\about.php';
         ?>
     </main>
 </div>
 <?php
-include 'C:\wamp64\www\public_html\templates\footer.php';
+include '..\templates\footer.php';
 ?>
 </body>
 
