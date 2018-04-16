@@ -8,7 +8,7 @@ include_once '../database/BlogpostDB.php';
 if (!isset($_SESSION['isadmin']) || $_SESSION['isadmin']==0) {
         $_SESSION['message'] = "ACCESS DENIED! You are not logged in or are not an admin.";
         $_SESSION['report_code'] = 'error';
-        header('location: http://localhost/manage/');
+        header('location: http://localhost/public_html//');
         exit;
 }
 

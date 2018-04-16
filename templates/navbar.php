@@ -39,7 +39,7 @@ $currentTab = $myarray[2];
                 <?php if (isset($_SESSION['isadmin'])) {
                     if ($_SESSION['isadmin'] == 1): ?>
                         <li class="nav-item order-2 order-md-1">
-                            <a href="http://localhost/public_html/manage" class="nav-link" title="Manage"><i
+                            <a href="http://localhost/public_html/manage/" class="nav-link" title="Manage"><i
                                         class="fa fa-cog fa-fw fa-lg"></i></a>
                         </li>
                     <?php
@@ -93,7 +93,7 @@ $currentTab = $myarray[2];
                     </li>
                 <?php elseif ($_SESSION['logged_in'] == true): ?>
                     <li>
-                    <span class="navbar-text">
+                    <span class="navbar-text mr-3">
                         <?php echo "Welcome, " . $_SESSION['first_name'] . " " . $_SESSION['last_name'] . "!  ID:" . $_SESSION['user_id'] ?>
                     </span>
                     </li>
