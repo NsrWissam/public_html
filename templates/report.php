@@ -29,8 +29,6 @@
 
         <?php if (isset($_SESSION['message']) AND !empty($_SESSION['message'])):
             echo $_SESSION['message']; endif; ?>
-        <hr/>
-        You can dismiss this message with the X button.
     </div>
     <?php
     $_SESSION['report_code']="";
