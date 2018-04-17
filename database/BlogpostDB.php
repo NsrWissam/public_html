@@ -52,15 +52,6 @@ class BlogpostDB {
         return $resultsArray;
     }
 
-    public static function getNOCbyID($id){
-        $results = self::getConnection()->executeQuery("SELECT count(comment.blogpost_id) as nr_of_comments from blogpost left join comment on (blogpost.id = comment.blogpost_id) WHERE blogpost.id = $id group by blogpost.id DESC LIMIT 3;");
-
-        $row = $results->fetch_array();
-        //Make a book
-
-        return $row[0];
-    }
-
     public static function getRandom()
     {
 //        Execute query
@@ -78,12 +69,61 @@ class BlogpostDB {
         return $resultsArray;
     }
 
+
+    public static function getNOCbyID($id){
+        $results = self::getConnection()->executeQuery("SELECT count(comment.blogpost_id) as nr_of_comments from blogpost left join comment on (blogpost.id = comment.blogpost_id) WHERE blogpost.id = $id group by blogpost.id DESC LIMIT 3;");
+
+        $row = $results->fetch_array();
+        //Make a book
+
+        return $row[0];
+    }
+
+    public static function deletePostByID($id){
+        return self::getConnection()->executeQuery("DELETE FROM blogpost where id=$id");
+
+    }
+
+    public static function getPostsByCatID($category_id){
+
+        $results = self::getConnection()->executeQuery("SELECT * FROM blogpost where category_id=$category_id");
+        $resultsArray = array();
+
+        for($i = 0; $i < $results->num_rows; $i++ ){
+
+            $row = $results->fetch_array();
+
+            $blogpost = self::convertRowToObject($row);
+
+            $resultsArray[$i] = $blogpost;
+        }
+        return $resultsArray;
+    }
+
+    public static function getPostsByMonth($MonthName){
+
+        $results = self::getConnection()->executeQuery("SELECT * FROM blogpost where MONTHNAME(postdate)='$MonthName'");
+        //var_dump($results);
+        $resultsArray = array();
+
+        for($i = 0; $i < $results->num_rows; $i++ ){
+
+            $row = $results->fetch_array();
+
+            $blogpost = self::convertRowToObject($row);
+
+            $resultsArray[$i] = $blogpost;
+        }
+        return $resultsArray;
+    }
+
+
     public static function insert($blogpost){
         //var_dump($blogpost);
         $query = "INSERT INTO blogpost(title,author_id,content,image,category_id) VALUES ('?','?','?','?','?');";
         return self::getConnection()->executeQuery( $query ,array($blogpost->title,$blogpost->author_id,
-                $blogpost->content,$blogpost->image,
-                $blogpost->category_id ));//$blogpost->postdate
+            $blogpost->content,$blogpost->image,
+            $blogpost->category_id ));//$blogpost->postdate
     }
 
     public static function convertRowToObject($row){
@@ -100,7 +140,7 @@ class BlogpostDB {
     public static function makePost($blogpost){
 //           Set all generated content of new blogpost object
         if(!isset($_SESSION['user_id'])){
-           session_start();
+            session_start();
         }
         $author_id = $_SESSION['user_id'];
         $blogpost->author_id=$author_id;
@@ -135,11 +175,6 @@ class BlogpostDB {
                 exit;
             }
         }
-    }
-
-    public static function deletePostByID($id){
-        return self::getConnection()->executeQuery("DELETE FROM blogpost where id=$id");
-
     }
 }
 ?>

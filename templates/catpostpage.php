@@ -1,14 +1,22 @@
+<?php
+include_once '../database/BlogpostDB.php';
+include_once '../database/CategoryDB.php';
+include_once '../database/UserDB.php';
+include_once '../database/CommentDB.php';
+
+$category_id = intval($_GET['category_id']);
+$list = BlogpostDB::getPostsByCatID($category_id);
+//var_dump($list);
+?>
+
 <div class="container-fluid col-12">
 
     <h1>All Blog Posts</h1>
     <hr/>
     <div class="row">
         <?php
-
-        $list = BlogpostDB::getAll();
         foreach ($list as $blogpost) {
             $author = UserDB::getByID($blogpost->author_id);
-            $category = CategoryDB::getByID($blogpost->category_id);
             $noc = BlogpostDB::getNOCbyID($blogpost->id);
             ?>
 
@@ -24,7 +32,6 @@
                         <div class="card-footer text-muted">
                             <span><i class="fa fa-calendar"
                                      aria-hidden="true"></i><?php echo date(" D, d-m-'y", strtotime($blogpost->postdate)); ?> </span>
-                            | <?php echo $category->name; ?>
                         </div>
                     </div>
                 </div>

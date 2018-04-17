@@ -1,17 +1,25 @@
+<?php
+include_once '../database/BlogpostDB.php';
+include_once '../database/CategoryDB.php';
+include_once '../database/UserDB.php';
+include_once '../database/CommentDB.php';
+
+$MonthName = strval($_GET['MonthName']);
+$list = BlogpostDB::getPostsByMonth($MonthName);
+//var_dump($list);
+?>
+
 <div class="container-fluid col-12">
 
     <h1>All Blog Posts</h1>
     <hr/>
     <div class="row">
         <?php
-
-        $list = BlogpostDB::getAll();
         foreach ($list as $blogpost) {
             $author = UserDB::getByID($blogpost->author_id);
             $category = CategoryDB::getByID($blogpost->category_id);
             $noc = BlogpostDB::getNOCbyID($blogpost->id);
             ?>
-
             <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 float-left p-2">
                 <div class="card m-2" onclick="showByBlogpostID(<?php echo $blogpost->id; ?>)">
                     <img title="<?php echo $noc ?> comments" class="card-img-top"
@@ -29,7 +37,6 @@
                     </div>
                 </div>
             </div>
-
             <?php
         }
         ?>

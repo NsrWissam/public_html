@@ -1,9 +1,12 @@
 <?php
+include_once '../database/BlogpostDB.php';
+include_once '../database/CategoryDB.php';
+include_once '../database/UserDB.php';
+include_once '../database/CommentDB.php';
+
 if (!isset($_SESSION)) {
     session_start();
 }
-include_once '../database/BlogpostDB.php';
-include_once '../database/CategoryDB.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,9 +22,12 @@ include_once '../database/CategoryDB.php';
     <main class="col-12 pt-3">
         <?php
         include 'C:\wamp64\www\public_html\templates\report.php';
-
-        include 'C:\wamp64\www\public_html\home\home.php';
         ?>
+        <div id="pageSwap">
+            <?php
+            include 'C:\wamp64\www\public_html\home\home.php';
+            ?>
+        </div>
     </main>
 </div>
 <?php

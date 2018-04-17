@@ -1,7 +1,9 @@
 <?php
 include_once "../data/Comment.php";
 include_once "DatabaseFactory.php";
-session_start();
+if (!isset($_SESSION)) {
+    session_start();
+}
 class CommentDB {
 
     private static function getConnection(){

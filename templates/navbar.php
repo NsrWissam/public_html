@@ -24,15 +24,11 @@ $currentTab = $myarray[2];
         <div class="collapse navbar-collapse" id="exCollapsingNavbar">
             <ul class="nav navbar-nav">
                 <?php if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] == false): ?>
-                    <li class="nav-item"><a href="http://localhost/public_html/allposts/" class="nav-link">All Posts</a>
-                    </li>
-                    <li class="nav-item"><a href="http://localhost/public_html/about/" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="http://localhost/public_html/allposts/" class="nav-link">All Posts</a></li>
+
                 <?php elseif ($_SESSION['logged_in'] == true): ?>
-                    <li class="nav-item"><a href="http://localhost/public_html/allposts/" class="nav-link">All Posts</a>
-                    </li>
-                    <li class="nav-item"><a href="http://localhost/public_html/about/" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="http://localhost/public_html/makepost/" class="nav-link">Make Post</a>
-                    </li>
+                    <li class="nav-item"><a href="http://localhost/public_html/allposts/" class="nav-link">All Posts</a></li>
+                    <li class="nav-item"><a href="http://localhost/public_html/makepost/" class="nav-link">Make Post</a></li>
                 <?php endif; ?>
             </ul>
             <ul class="nav navbar-nav flex-row justify-content-between ml-auto">
