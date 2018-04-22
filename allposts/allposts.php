@@ -33,9 +33,10 @@
                         <p align="justify" class="card-text">
                             <?php echo substr($blogpost->content, 0, 250) . "..."; ?></p>
                         <div class="card-footer text-muted">
-                            <span><i class="fa fa-calendar"
-                                     aria-hidden="true"></i><?php echo date(" D, d-m-'y", strtotime($blogpost->postdate)); ?> </span>
-                            | <?php echo $category->name; ?>
+                            <span>
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+								<?php echo date(" D, d-m-'y", strtotime($blogpost->postdate))." | ".$category->name; ?> 
+                            </span>
                         </div>
                     </div>
                 </div>
