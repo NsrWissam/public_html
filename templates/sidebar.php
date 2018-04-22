@@ -73,8 +73,9 @@
                                     </span>
                         </p>
                     </small>
-                    <small class="col-12"><p
-                                align="justify"><?php echo substr($blogpost->content, 0, 100) . "..."; ?></p></small>
+                    <small class="col-12">
+                        <p align="justify"><?php echo substr($blogpost->content, 0, 100) . "..."; ?></p>
+                    </small>
                 </div>
             </div>
             </div>
