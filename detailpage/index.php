@@ -27,7 +27,7 @@ if (!isset($_SESSION)) {
         ?>
         <div id="pageSwap">
             <?php
-            include '..\allposts\allposts.php';
+            include '../detailpage/detailpage.php';
             ?>
         </div>
     </main>

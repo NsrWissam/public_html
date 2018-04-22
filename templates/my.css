@@ -176,3 +176,7 @@ body .no-padding {
 .status-upload form button > i {
     margin-right: 7px;
 }
+
+.clickable{
+    cursor: pointer;
+}

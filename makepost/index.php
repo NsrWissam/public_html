@@ -10,7 +10,7 @@ if (!isset($_SESSION)) {
 if ($_SESSION['logged_in'] == false || !isset($_SESSION['logged_in'])) {
     $_SESSION['message'] = "You are not logged in yet. If you wish to create a blog post, log in first";
     $_SESSION['report_code'] = 'error';
-    header('location: http://localhost/public_html/');
+    header('location: ../home/');
     exit;
 }
 
@@ -24,27 +24,27 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <!DOCTYPE html>
 <html lang="en">
-<?php include 'C:\wamp64\www\public_html\templates\header.php'; ?>
+<?php include '..\templates\header.php'; ?>
 <head>
     <title>Post blog</title>
 </head>
 <body>
-<?php include 'C:\wamp64\www\public_html\templates\navbar.php'; ?>
+<?php include '..\templates\navbar.php'; ?>
 <div class="container-fluid min-h-89 row">
-    <?php include 'C:\wamp64\www\public_html\templates\sidebar.php'; ?>
+    <?php include '..\templates\sidebar.php'; ?>
     <main class="col-sm-12 col-md-12 col-lg-10 col-xl-10 pt-3">
         <?php
-        include 'C:\wamp64\www\public_html\templates\report.php';
+        include '..\templates\report.php';
         ?>
         <div id="pageSwap">
             <?php
-            include 'C:\wamp64\www\public_html\makepost\makepost.php';
+            include '..\makepost\makepost.php';
             ?>
         </div>
     </main>
 </div>
 <?php
-include 'C:\wamp64\www\public_html\templates\footer.php';
+include '..\templates\footer.php';
 ?>
 </body>
 </html>

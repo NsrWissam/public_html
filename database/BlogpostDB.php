@@ -52,6 +52,22 @@ class BlogpostDB {
         return $resultsArray;
     }
 
+    public static function getSameCat($blogpost){
+        //        Execute query
+        $results = self::getConnection()->executeQuery("SELECT * from blogpost WHERE category_id = $blogpost->category_id AND id <> $blogpost->id LIMIT 3;");
+//        Prepare array to return to frontend
+        $resultsArray = array();
+        for($i = 0; $i < $results->num_rows; $i++ ){
+            //Retrieves the current selected row
+            $row = $results->fetch_array();
+            //Make a book
+            $blogpost = self::convertRowToObject($row);
+            //add book to result array
+            $resultsArray[$i] = $blogpost;
+        }
+        return $resultsArray;
+    }
+
     public static function getRandom()
     {
 //        Execute query
@@ -155,7 +171,7 @@ class BlogpostDB {
 
             $_SESSION['message'] = 'Blogpost with this title already exists! try again.';
             $_SESSION['report_code']='error';
-            header("location: http://localhost/public_html/makepost/");
+            header("location: ../makepost/");
             exit;
         }
         else { // Blogpost title doesn't already exist in the database, proceed...
@@ -164,14 +180,14 @@ class BlogpostDB {
             if (self::insert($blogpost)){
                 $_SESSION['message'] = "Blogpost *<strong>$blogpost->title</strong>* was successfully submitted!";
                 $_SESSION['report_code']="success";
-                header("location: http://localhost/public_html/");
+                header("location: ../home/");
                 exit;
             }
             else {
                 $_SESSION['message'] = 'Blogpost insert operation failed!';
                 $_SESSION['report_code']='error';
 
-                header("location: http://localhost/public_html/makepost/");
+                header("location: ../makepost/");
                 exit;
             }
         }

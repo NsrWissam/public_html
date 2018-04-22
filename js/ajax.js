@@ -56,7 +56,7 @@ function showByBlogpostID(blogpost_id) {
                 document.getElementById("pageSwap").innerHTML = this.responseText;
             }
         };
-        xmlhttp.open("GET","../templates/detailpage.php?blogpost_id="+blogpost_id,true);
+        xmlhttp.open("GET","../detailpage/detailpage.php?blogpost_id="+blogpost_id,true);
         xmlhttp.send();
     }
 }

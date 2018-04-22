@@ -44,7 +44,7 @@
                         <td><?php echo $category->id; ?></td>
                         <td><?php echo $category->name; ?></td>
                         <td>
-                            <form action="http://localhost/public_html/manage/"
+                            <form action="../manage/"
                                   class="form" role="form" method="post">
                                 <input hidden name="categoryid" id="categoryid" type="text" autocomplete="off" value="<?php echo $category->id ?>" />
                                 <button id="deleteCategory" name="deleteCategory" class="btn-secondary btn-block mt-3" type="submit">
@@ -99,7 +99,7 @@
                     <td><?php echo $category->name; ?></td>
                     <td><?php echo date(" D, d-m-'y",strtotime($blogpost->postdate)); ?></td>
                     <td>
-                        <form action="http://localhost/public_html/manage/"
+                        <form action="../manage/"
                               class="form" role="form" method="post">
                         <input hidden name="blogpostid" id="blogpostid" type="text" autocomplete="off" value="<?php echo $blogpost->id ?>" />
                         <button id="delete" name="delete" class="btn-secondary btn-block mt-3" type="submit">

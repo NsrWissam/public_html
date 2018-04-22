@@ -5,6 +5,6 @@ if (!isset($_SESSION)) {
 }
 $_SESSION['report_code']="logout";
 $_SESSION['logged_in']=false;
-header("location: http://localhost/public_html/");
+header("location: ../home/");
 
 ?>

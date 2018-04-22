@@ -26,11 +26,6 @@ class CommentDB {
         return $resultsArray;
     }
 
-    public static function insert($comment){
-        return self::getConnection(content, title)->executeQuery("INSERT INTO comment(content,title) VALUES ('?','?')",
-            array($comment->content,$comment->title));
-    }
-
     public static function convertRowToObject($row){
         return new Comment(
             $row['id'],
@@ -55,6 +50,11 @@ class CommentDB {
             $resultsArray[$i] = $blogpost;
         }
         return $resultsArray;
+    }
+
+    public static function insert($comment){
+        return self::getConnection()->executeQuery("INSERT INTO comment(blogpost_id,author_id,content,title) VALUES ('?','?','?','?')",
+            array($comment->blogpost_id,$comment->author_id,$comment->content,$comment->title));
     }
 
 }

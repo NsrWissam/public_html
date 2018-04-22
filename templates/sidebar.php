@@ -1,10 +1,10 @@
-
-
 <nav class="col-lg-2 col-xl-2 d-xl-block d-lg-block d-md-none d-sm-none d-none sidebar">
     <div id="MainMenu" class="text-center mb-4">
 
         <a href="#collapse1" class="navbar-text clg col-12" data-parent="#MainMenu" data-toggle="collapse">
+            <span class="h6">
             Categories
+            </span>
             <i class="fa fa-caret-down"></i></a>
 
         <div class="row">
@@ -14,17 +14,18 @@
                 foreach ($list as $category) {
                     ?>
 
-                    <a  onclick="showByCategoryID(<?php echo $category->id; ?>)" class="nav-link-sidebar" href="#"><?php echo $category->name; ?></a>
+                    <a onclick="showByCategoryID(<?php echo $category->id; ?>)" class="nav-link-sidebar"
+                       href="#"><?php echo $category->name; ?></a>
 
                 <?php } ?>
             </div>
         </div>
 
-        <a href="#collapse2" class="navbar-text mt-1 clg" data-parent="#MainMenu" data-toggle="collapse">Month
-            Archive <i class="fa fa-caret-down"></i></a>
+        <a href="#collapse2" class="navbar-text mt-1 clg" data-parent="#MainMenu" data-toggle="collapse"><span class="h6"> Month
+            Archive </span><i class="fa fa-caret-down"></i></a>
         <div class="row">
             <div class="collapse text-center col-12" id="collapse2">
-                <a onclick="showByMonthName('January')"class="nav-link-sidebar" href="#">January</a>
+                <a onclick="showByMonthName('January')" class="nav-link-sidebar" href="#">January</a>
                 <a onclick="showByMonthName('February')" class="nav-link-sidebar" href="#">February</a>
                 <a onclick="showByMonthName('March')" class="nav-link-sidebar" href="#">March</a>
                 <a onclick="showByMonthName('April')" class="nav-link-sidebar" href="#">April</a>
@@ -40,42 +41,46 @@
         </div>
     </div>
 
-        <?php if ($currentTab == "allposts") {
-    $list = BlogpostDB::getMostPopular();
-    ?>
-            <h5 class="text-center" style="color: lightgray">Popular Posts</h5>
-            <?php
-    foreach ($list as $blogpost) {
-    $author = UserDB::getByID($blogpost->author_id);
-    $category = CategoryDB::getByID($blogpost->category_id)
-    ?><div onclick="showByBlogpostID(<?php echo $blogpost->id; ?>)" class="d-block">
-                <div class="col-12 float-left pt-2">
-                        <a href="#">
-                            <img class="media-object rounded" src="<?php echo $blogpost->image; ?>"
-                            alt="Blogpost image" height="auto" width="90%" style="max-width: 250px;">
-                        </a>
-                    </div>
-                <div class="col-12">
-                        <div class="media-body">
-                            <h6 class="media-heading mt-1" style="text-decoration: underline;"><?php echo $blogpost->title; ?></h6>
-                            <small>
-                                <p style="font-size: 90%;">
+    <?php if ($currentTab == "allposts") {
+        $list = BlogpostDB::getMostPopular();
+        ?>
+        <h5 class="text-center mt-5 pb-4" style="color: lightgray">Popular Posts</h5>
+        <?php
+        foreach ($list as $blogpost) {
+            $author = UserDB::getByID($blogpost->author_id);
+            $category = CategoryDB::getByID($blogpost->category_id)
+            ?>
+            <div onclick="showByBlogpostID(<?php echo $blogpost->id; ?>)" class="d-block clickable">
+            <div class="col-12 float-left">
+                <a href="#">
+                    <img class="media-object rounded" src="<?php echo $blogpost->image; ?>"
+                         alt="Blogpost image" height="auto" width="90%" style="max-width: 250px;">
+                </a>
+            </div>
+            <div class="col-12">
+                <div class="media-body">
+                    <h6 class="media-heading mt-1"
+                        style="text-decoration: underline;"><?php echo $blogpost->title; ?></h6>
+                    <small>
+                        <p style="font-size: 90%;">
                                 <span class="float-left">
-                                        By <?php echo $author->first_name . "," . $author->last_name ?>
+                                        By <?php echo strtoupper(substr($author->first_name, 0, 1)) . substr($author->first_name, 1) . " " . strtoupper(substr($author->last_name, 0, 1)) . "."; ?>
                                     </span>
-                                <span class="float-right">
+                            <span class="float-right">
                                                 <i class="fa fa-calendar" aria-hidden="true"></i>
-                                        <?php echo date("D, d/m/'y", strtotime($blogpost->postdate)); ?> | <?php echo $category->name; ?>
+                                <?php echo date("D, d/m/'y", strtotime($blogpost->postdate)); ?>
+                                | <?php echo $category->name; ?>
                                     </span>
-                                </p>
-                            </small>
-                            <small class="col-12"><p align="justify"><?php echo substr($blogpost->content, 0, 100) . "..."; ?></p></small>
-                        </div>
-                    </div>
+                        </p>
+                    </small>
+                    <small class="col-12"><p
+                                align="justify"><?php echo substr($blogpost->content, 0, 100) . "..."; ?></p></small>
                 </div>
+            </div>
+            </div>
 
-                <?php
-    }
+            <?php
+        }
     }
     ?>
 

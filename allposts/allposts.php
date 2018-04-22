@@ -13,12 +13,23 @@
             ?>
 
             <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 float-left p-2">
-                <div class="card m-2" onclick="showByBlogpostID(<?php echo $blogpost->id; ?>)">
+                <div class="card m-2 clickable" onclick="showByBlogpostID(<?php echo $blogpost->id; ?>)">
                     <img title="<?php echo $noc ?> comments" class="card-img-top"
                          src="<?php echo $blogpost->image; ?>" alt="<?php echo $blogpost->title; ?>">
                     <div class="card-body">
-                        <h2 class="card-title"><?php echo $blogpost->title; ?></h2>
-                        <p class="text-right">By <?php echo $author->first_name . "," . $author->last_name ?></p>
+                        <div class="row">
+                            <div class="pl-3 pr-0 col-sm-12 col-md-7 col-lg-7 col-xl-8">
+                                <h4 align="left"><?php echo $blogpost->title; ?></h4>
+                            </div>
+                            <div class="pl-0 pr-3 col-sm-12 col-md-5 col-lg-5 col-xl-4">
+                                <p align="right">
+                                    By <?php echo strtoupper(substr($author->first_name, 0, 1))
+                                        . substr($author->first_name, 1) . ", "
+                                        . strtoupper(substr($author->last_name, 0, 1)) . ".";
+                                    ?>
+                                </p>
+                            </div>
+                        </div>
                         <p align="justify" class="card-text">
                             <?php echo substr($blogpost->content, 0, 250) . "..."; ?></p>
                         <div class="card-footer text-muted">

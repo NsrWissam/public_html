@@ -28,8 +28,8 @@
       <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/home/home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="57" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="57" />
+            <state relative-caret-position="502">
+              <caret line="79" column="106" selection-start-line="79" selection-start-column="106" selection-end-line="79" selection-end-column="124" />
             </state>
           </provider>
         </entry>
@@ -37,22 +37,22 @@
       <file leaf-file-name="sidebar.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/sidebar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1088">
-              <caret line="64" column="43" lean-forward="true" selection-start-line="64" selection-start-column="43" selection-end-line="64" selection-end-column="43" />
+            <state relative-caret-position="451">
+              <caret line="66" column="136" selection-start-line="66" selection-start-column="136" selection-end-line="66" selection-end-column="136" />
               <folding>
                 <element signature="n#style#0;n#h5#0;n#nav#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#1;n#nav#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#small#0;n#div#0;n#div#1;n#div#1;n#nav#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h6#0;n#div#0;n#div#1;n#div#1;n#nav#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="detailpage.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/detailpage.php">
+        <entry file="file://$PROJECT_DIR$/detailpage/detailpage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
-              <caret line="91" column="93" selection-start-line="91" selection-start-column="93" selection-end-line="91" selection-end-column="93" />
+            <state relative-caret-position="448">
+              <caret line="71" column="162" selection-start-line="71" selection-start-column="162" selection-end-line="71" selection-end-column="162" />
             </state>
           </provider>
         </entry>
@@ -60,35 +60,26 @@
       <file leaf-file-name="navbar.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/navbar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1530">
-              <caret line="90" column="27" lean-forward="true" selection-start-line="90" selection-start-column="27" selection-end-line="90" selection-end-column="27" />
+            <state relative-caret-position="798">
+              <caret line="85" column="78" selection-start-line="85" selection-start-column="78" selection-end-line="85" selection-end-column="78" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="makepost.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/makepost/makepost.php">
+      <file leaf-file-name="catpostpage.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/catpostpage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="28" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="28" />
+            <state relative-caret-position="697">
+              <caret line="41" column="60" selection-start-line="41" selection-start-column="60" selection-end-line="41" selection-end-column="60" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/Bootstrap/vendor/bootstrap/css/bootstrap.css">
+      <file leaf-file-name="montharchive.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/montharchive.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="610" column="22" lean-forward="true" selection-start-line="610" selection-start-column="22" selection-end-line="610" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="my.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/my.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2032">
-              <caret line="177" column="1" selection-start-line="177" selection-start-column="1" selection-end-line="177" selection-end-column="1" />
+            <state relative-caret-position="680">
+              <caret line="40" column="60" lean-forward="true" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -96,38 +87,35 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/makepost/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="1" lean-forward="true" selection-start-line="5" selection-end-line="7" selection-end-column="1" />
+            <state relative-caret-position="697">
+              <caret line="41" column="14" lean-forward="true" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommentDB.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/CommentDB.php">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manage/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="40" column="26" lean-forward="true" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+            <state relative-caret-position="578">
+              <caret line="34" column="15" lean-forward="true" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BlogpostDB.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/BlogpostDB.php">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/registration/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1190">
-              <caret line="162" column="14" selection-start-line="162" selection-start-column="14" selection-end-line="162" selection-end-column="14" />
-              <folding>
-                <element signature="n#getConnection#0;n#BlogpostDB#0;n#!!top" />
-                <element signature="n#getAll#0;n#BlogpostDB#0;n#!!top" />
-                <element signature="n#getByID#0;n#BlogpostDB#0;n#!!top" />
-                <element signature="n#getMostPopular#0;n#BlogpostDB#0;n#!!top" />
-                <element signature="n#getRandom#0;n#BlogpostDB#0;n#!!top" />
-                <element signature="n#getNOCbyID#0;n#BlogpostDB#0;n#!!top" />
-                <element signature="n#deletePostByID#0;n#BlogpostDB#0;n#!!top" />
-                <element signature="n#getPostsByCatID#0;n#BlogpostDB#0;n#!!top" />
-                <element signature="n#insert#0;n#BlogpostDB#0;n#!!top" />
-                <element signature="n#convertRowToObject#0;n#BlogpostDB#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="51">
+              <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="allposts.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/allposts/allposts.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="485">
+              <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -145,15 +133,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>welc</find>
-      <find>ema</find>
-      <find>email</find>
-      <find>h-25</find>
-      <find>foot</find>
-      <find>placeholder=&quot;Email&quot;</find>
-      <find>fixed-botto</find>
-      <find>col-2</find>
-      <find>body</find>
       <find>nav-link</find>
       <find>nav-item</find>
       <find>h-</find>
@@ -175,6 +154,15 @@
       <find>row</find>
       <find>.row</find>
       <find>ID</find>
+      <find>insert</find>
+      <find>comment</find>
+      <find>header</find>
+      <find>href</find>
+      <find>http</find>
+      <find>C:\wamp64\www\public_html</find>
+      <find>admin</find>
+      <find>firs</find>
+      <find>inc</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -185,6 +173,7 @@
       <replace>h-90</replace>
       <replace>h-89</replace>
       <replace>min-h-89</replace>
+      <replace>..</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\wamp64\www</dir>
@@ -197,8 +186,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/db/data/Category.php" />
-        <option value="$PROJECT_DIR$/db/data/Blogpost.php" />
         <option value="$PROJECT_DIR$/db/database/database.php" />
         <option value="$PROJECT_DIR$/db/index.php" />
         <option value="$PROJECT_DIR$/db/database/Database.php" />
@@ -228,26 +215,28 @@
         <option value="$PROJECT_DIR$/manage/manage.php" />
         <option value="$PROJECT_DIR$/registration/register.php" />
         <option value="$PROJECT_DIR$/about/index.php" />
-        <option value="$PROJECT_DIR$/templates/navbar.php" />
         <option value="$PROJECT_DIR$/templates/detailpagina.php" />
         <option value="$PROJECT_DIR$/js/sidebar.js" />
-        <option value="$PROJECT_DIR$/js/ajax.js" />
-        <option value="$PROJECT_DIR$/makepost/index.php" />
-        <option value="$PROJECT_DIR$/allposts/index.php" />
         <option value="$PROJECT_DIR$/home/index.php" />
         <option value="$PROJECT_DIR$/templates/header.php" />
         <option value="$PROJECT_DIR$/registration/index.php" />
         <option value="$PROJECT_DIR$/templates/report.php" />
-        <option value="$PROJECT_DIR$/manage/index.php" />
-        <option value="$PROJECT_DIR$/templates/catpostpage.php" />
-        <option value="$PROJECT_DIR$/templates/montharchive.php" />
-        <option value="$PROJECT_DIR$/home/home.php" />
-        <option value="$PROJECT_DIR$/allposts/allposts.php" />
-        <option value="$PROJECT_DIR$/database/CommentDB.php" />
-        <option value="$PROJECT_DIR$/templates/sidebar.php" />
-        <option value="$PROJECT_DIR$/templates/my.css" />
-        <option value="$PROJECT_DIR$/database/BlogpostDB.php" />
         <option value="$PROJECT_DIR$/templates/detailpage.php" />
+        <option value="$PROJECT_DIR$/templates/my.css" />
+        <option value="$PROJECT_DIR$/detailpage/index.php" />
+        <option value="$PROJECT_DIR$/allposts/index.php" />
+        <option value="$PROJECT_DIR$/js/ajax.js" />
+        <option value="$PROJECT_DIR$/database/CommentDB.php" />
+        <option value="$PROJECT_DIR$/database/BlogpostDB.php" />
+        <option value="$PROJECT_DIR$/templates/montharchive.php" />
+        <option value="$PROJECT_DIR$/templates/sidebar.php" />
+        <option value="$PROJECT_DIR$/makepost/index.php" />
+        <option value="$PROJECT_DIR$/manage/index.php" />
+        <option value="$PROJECT_DIR$/allposts/allposts.php" />
+        <option value="$PROJECT_DIR$/home/home.php" />
+        <option value="$PROJECT_DIR$/templates/navbar.php" />
+        <option value="$PROJECT_DIR$/templates/catpostpage.php" />
+        <option value="$PROJECT_DIR$/detailpage/detailpage.php" />
       </list>
     </option>
   </component>
@@ -262,9 +251,9 @@
       <path value="$PROJECT_DIR$/templates/Bootstrap/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="447" />
-    <option name="y" value="-9" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="241" />
+    <option name="y" value="114" />
     <option name="width" value="974" />
     <option name="height" value="901" />
   </component>
@@ -274,6 +263,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -295,6 +285,11 @@
               <item name="MyBlog" type="b2602c69:ProjectViewProjectNode" />
               <item name="public_html" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="database" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MyBlog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="public_html" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="detailpage" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="MyBlog" type="b2602c69:ProjectViewProjectNode" />
@@ -331,41 +326,10 @@
               <item name="public_html" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="MyBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="public_html" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Bootstrap" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="MyBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="public_html" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Bootstrap" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="MyBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="public_html" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Bootstrap" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="bootstrap" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="MyBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="public_html" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Bootstrap" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="bootstrap" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -379,19 +343,19 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\public_html\detailpage" />
+      <recent name="C:\wamp64\www\public_html" />
+      <recent name="C:\wamp64\www\public_html\db\database" />
+      <recent name="C:\wamp64\www\public_html\templates" />
+      <recent name="C:\wamp64\www\public_html\pages" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\public_html\templates" />
       <recent name="C:\wamp64\www\public_html\manage" />
       <recent name="C:\wamp64\www\public_html\registration" />
       <recent name="C:\wamp64\www\public_html\db\data" />
       <recent name="C:\wamp64\www\public_html\makepost" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\public_html" />
-      <recent name="C:\wamp64\www\public_html\db\database" />
-      <recent name="C:\wamp64\www\public_html\templates" />
-      <recent name="C:\wamp64\www\public_html\pages" />
-      <recent name="C:\wamp64\www\public_html\registration" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -446,25 +410,28 @@
       <workItem from="1523875651828" duration="23808000" />
       <workItem from="1523969436677" duration="120000" />
       <workItem from="1524331515211" duration="14294000" />
+      <workItem from="1524385328691" duration="19686000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="309202000" />
+    <option name="totallyTimeSpent" value="328888000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.47339246" visible="true" weight="0.108333334" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info id="Structure" order="1" sideWeight="0.5266075" side_tool="true" weight="0.274463" />
       <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.47339246" visible="true" weight="0.108333334" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.47608927" />
+      <window_info id="Structure" order="1" sideWeight="0.5266075" side_tool="true" weight="0.274463" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -473,7 +440,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.47608927" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -484,7 +450,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="20" />
+      <option name="time" value="23" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -496,11 +462,10 @@
             <element signature="n#getConnection#0;n#BlogpostDB#0;n#!!top" />
             <element signature="n#getAll#0;n#BlogpostDB#0;n#!!top" />
             <element signature="n#getByID#0;n#BlogpostDB#0;n#!!top" />
-            <element signature="n#getMostPopular#0;n#BlogpostDB#0;n#!!top" />
             <element signature="n#getRandom#0;n#BlogpostDB#0;n#!!top" />
             <element signature="n#getNOCbyID#0;n#BlogpostDB#0;n#!!top" />
             <element signature="n#deletePostByID#0;n#BlogpostDB#0;n#!!top" />
-            <element signature="n#insert#0;n#BlogpostDB#0;n#!!top" />
+            <element signature="n#getPostsByMonth#0;n#BlogpostDB#0;n#!!top" />
             <element signature="n#convertRowToObject#0;n#BlogpostDB#0;n#!!top" />
             <element signature="n#makePost#0;n#BlogpostDB#0;n#!!top" />
           </folding>
@@ -567,13 +532,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/Blogpost.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/CategoryDB.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -602,13 +560,6 @@
             <element signature="n#convertRowToObject#0;n#UserDB#0;n#!!top" />
             <element signature="n#register#0;n#UserDB#0;n#!!top" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/ajax.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -647,20 +598,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/registration/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="24" lean-forward="true" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/manage/manage.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
@@ -668,34 +605,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/catpostpage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="59" selection-start-line="29" selection-start-column="59" selection-end-line="29" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/montharchive.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="59" selection-start-line="29" selection-start-column="59" selection-end-line="29" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/my.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/Database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="26" column="55" lean-forward="true" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/allposts/allposts.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="14" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="12" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -706,76 +619,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/my.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2032">
-          <caret line="177" column="1" selection-start-line="177" selection-start-column="1" selection-end-line="177" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/Bootstrap/vendor/bootstrap/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="610" column="22" lean-forward="true" selection-start-line="610" selection-start-column="22" selection-end-line="610" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/sidebar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="64" column="43" lean-forward="true" selection-start-line="64" selection-start-column="43" selection-end-line="64" selection-end-column="43" />
-          <folding>
-            <element signature="n#style#0;n#h5#0;n#nav#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#1;n#nav#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#small#0;n#div#0;n#div#1;n#div#1;n#nav#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/allposts/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/BlogpostDB.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1190">
-          <caret line="162" column="14" selection-start-line="162" selection-start-column="14" selection-end-line="162" selection-end-column="14" />
-          <folding>
-            <element signature="n#getConnection#0;n#BlogpostDB#0;n#!!top" />
-            <element signature="n#getAll#0;n#BlogpostDB#0;n#!!top" />
-            <element signature="n#getByID#0;n#BlogpostDB#0;n#!!top" />
-            <element signature="n#getMostPopular#0;n#BlogpostDB#0;n#!!top" />
-            <element signature="n#getRandom#0;n#BlogpostDB#0;n#!!top" />
-            <element signature="n#getNOCbyID#0;n#BlogpostDB#0;n#!!top" />
-            <element signature="n#deletePostByID#0;n#BlogpostDB#0;n#!!top" />
-            <element signature="n#getPostsByCatID#0;n#BlogpostDB#0;n#!!top" />
-            <element signature="n#insert#0;n#BlogpostDB#0;n#!!top" />
-            <element signature="n#convertRowToObject#0;n#BlogpostDB#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/CommentDB.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="40" column="26" lean-forward="true" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="57" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/makepost/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="5" selection-end-line="7" selection-end-column="1" />
+        <state relative-caret-position="10370">
+          <caret line="610" column="22" selection-start-line="610" selection-start-column="22" selection-end-line="610" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -786,17 +633,148 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/navbar.php">
+    <entry file="file://$PROJECT_DIR$/data/Blogpost.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
-          <caret line="90" column="27" lean-forward="true" selection-start-line="90" selection-start-column="27" selection-end-line="90" selection-end-column="27" />
+        <state relative-caret-position="306">
+          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/detailpage.php">
+    <entry file="file://$PROJECT_DIR$/templates/my.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="842">
+          <caret line="180" column="20" selection-start-line="180" selection-start-column="20" selection-end-line="180" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/CommentDB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+          <folding>
+            <element signature="n#getConnection#0;n#CommentDB#0;n#!!top" />
+            <element signature="n#getAll#0;n#CommentDB#0;n#!!top" />
+            <element signature="n#convertRowToObject#0;n#CommentDB#0;n#!!top" />
+            <element signature="n#getCommentsByBPID#0;n#CommentDB#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/BlogpostDB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="56" column="145" lean-forward="true" selection-start-line="56" selection-start-column="145" selection-end-line="56" selection-end-column="145" />
+          <folding>
+            <element signature="n#getConnection#0;n#BlogpostDB#0;n#!!top" />
+            <element signature="n#getAll#0;n#BlogpostDB#0;n#!!top" />
+            <element signature="n#getByID#0;n#BlogpostDB#0;n#!!top" />
+            <element signature="n#getRandom#0;n#BlogpostDB#0;n#!!top" />
+            <element signature="n#getNOCbyID#0;n#BlogpostDB#0;n#!!top" />
+            <element signature="n#deletePostByID#0;n#BlogpostDB#0;n#!!top" />
+            <element signature="n#getPostsByMonth#0;n#BlogpostDB#0;n#!!top" />
+            <element signature="n#convertRowToObject#0;n#BlogpostDB#0;n#!!top" />
+            <element signature="n#makePost#0;n#BlogpostDB#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/ajax.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="58" column="52" selection-start-line="58" selection-start-column="52" selection-end-line="58" selection-end-column="52" />
+          <folding>
+            <element signature="n#!!block;n#showByCategoryID#0" />
+            <element signature="n#!!block;n#showByMonthName#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/detailpage/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="51" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/allposts/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/registration/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="66" column="136" selection-start-line="66" selection-start-column="136" selection-end-line="66" selection-end-column="136" />
+          <folding>
+            <element signature="n#style#0;n#h5#0;n#nav#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#1;n#nav#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h6#0;n#div#0;n#div#1;n#div#1;n#nav#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/makepost/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" column="14" lean-forward="true" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="15" lean-forward="true" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/allposts/allposts.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="485">
-          <caret line="91" column="93" selection-start-line="91" selection-start-column="93" selection-end-line="91" selection-end-column="93" />
+          <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="79" column="106" selection-start-line="79" selection-start-column="106" selection-end-line="79" selection-end-column="124" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/navbar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="85" column="78" selection-start-line="85" selection-start-column="78" selection-end-line="85" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/montharchive.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="60" lean-forward="true" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/catpostpage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" column="60" selection-start-line="41" selection-start-column="60" selection-end-line="41" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/detailpage/detailpage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="71" column="162" selection-start-line="71" selection-start-column="162" selection-end-line="71" selection-end-column="162" />
         </state>
       </provider>
     </entry>

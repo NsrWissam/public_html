@@ -60,7 +60,7 @@ class UserDB{
             if ( $result->num_rows == 0 ){ // User doesn't exist
                 $_SESSION['message'] = "User with that email doesn't exist!";
                 $_SESSION['report_code']='error';
-                header("location: http://localhost/public_html/".$currentTab."/");
+                header("location: ../".$currentTab."/");
                 exit;
             }
             else { // User exists
@@ -80,13 +80,13 @@ class UserDB{
 //                  This is how we'll know the user is logged in
                     $_SESSION['logged_in'] = true;
 
-                    header("location: http://localhost/public_html/".$currentTab."/");
+                    header("location: ../".$currentTab."/");
                     exit;
                 }
                 else {
                     $_SESSION['message'] = "You have entered wrong password, try again!";
                     $_SESSION['report_code']='error';
-                    header("location: http://localhost/public_html/".$currentTab."/");
+                    header("location: ../".$currentTab."/");
                     exit;
                 }
             }
@@ -122,7 +122,7 @@ class UserDB{
 
             $_SESSION['message'] = 'User with this email already exists!';
             $_SESSION['report_code']='error';
-            header("location: http://localhost/public_html/registration/");
+            header("location: ../registration/");
             exit;
         }
         else {  // Email doesn't already exist in a database, proceed...
@@ -137,14 +137,14 @@ class UserDB{
                 $_SESSION['logged_in'] = true; // So we know the user has logged in
                 $_SESSION['message'] = "Account was successfully created!";
                 $_SESSION['report_code']="success";
-                header("location: http://localhost/public_html/");
+                header("location: ../home/");
                 exit;
             }
 
             else {
                 $_SESSION['message'] = 'Registration failed!';
                 $_SESSION['report_code']='error';
-                header("location: http://localhost/public_html/registration/");
+                header("location: ../registration/");
                 exit;
             }
 
