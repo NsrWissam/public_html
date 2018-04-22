@@ -5,6 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         UserDB::login($_POST['email'], $_POST['password'], $_POST['currentTab']);
     }
 }
+//var_dump($_POST['stay_in']);
 $currentTab = $_SERVER['REQUEST_URI'];
 $myarray = explode('/', "ignore" . $currentTab);
 $currentTab = $myarray[2];
@@ -48,7 +49,7 @@ $currentTab = $myarray[2];
                                 class="btn btn-outline-secondary dropdown-toggle">Login <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-right mt-1 mr-1">
-                            <li class="p-3">
+                            <li class="pl-3 pr-3 pt-3">
                                 <form action="http://localhost/public_html/home/"
                                       class="form" role="form" method="post">
                                     <div class="form-group">
@@ -60,9 +61,9 @@ $currentTab = $myarray[2];
                                         form-control-sm" type="password" required="" name="password">
                                     </div>
                                     <div class="form-group">
-                                        <label for="stayLoggedInInput" class="form-check-inline">
-                                            <input id="stayLoggedInInput" class="form-check-input"
-                                                   type="checkbox" name="stayLoggedIn" value="">
+                                        <label for="stay" class="form-check-inline">
+                                            <input id="stay_in" class="form-check-input"
+                                                   type="checkbox" name="stay_in" value="">
                                             <small>Stay logged in?</small>
                                         </label>
                                     </div>
@@ -71,10 +72,6 @@ $currentTab = $myarray[2];
                                         <button name="login" type="submit"
                                                 class="btn btn-primary btn-block">Log in
                                         </button>
-                                    </div>
-                                    <div class="form-group text-xs-center">
-                                        <small><a href="http://localhost/public_html/resetPas/forgot.php">
-                                                Forgot password?</a></small>
                                     </div>
                                 </form>
                             </li>

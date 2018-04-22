@@ -41,5 +41,21 @@ class CommentDB {
             $row['date']);
     }
 
+    public static function getCommentsByBPID($blogpost_id){
+
+        $results = self::getConnection()->executeQuery("SELECT * FROM comment where blogpost_id=$blogpost_id");
+        $resultsArray = array();
+
+        for($i = 0; $i < $results->num_rows; $i++ ){
+
+            $row = $results->fetch_array();
+
+            $blogpost = self::convertRowToObject($row);
+
+            $resultsArray[$i] = $blogpost;
+        }
+        return $resultsArray;
+    }
+
 }
 ?>

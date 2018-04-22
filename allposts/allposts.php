@@ -19,7 +19,7 @@
                     <div class="card-body">
                         <h2 class="card-title"><?php echo $blogpost->title; ?></h2>
                         <p class="text-right">By <?php echo $author->first_name . "," . $author->last_name ?></p>
-                        <p align="card-text">
+                        <p align="justify" class="card-text">
                             <?php echo substr($blogpost->content, 0, 250) . "..."; ?></p>
                         <div class="card-footer text-muted">
                             <span><i class="fa fa-calendar"

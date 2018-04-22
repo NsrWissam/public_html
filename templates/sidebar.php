@@ -60,10 +60,10 @@
                             <h6 class="media-heading mt-1" style="text-decoration: underline;"><?php echo $blogpost->title; ?></h6>
                             <small>
                                 <p style="font-size: 90%;">
-                                <span style="float: left;">
+                                <span class="float-left">
                                         By <?php echo $author->first_name . "," . $author->last_name ?>
                                     </span>
-                                <span style="float:right;">
+                                <span class="float-right">
                                                 <i class="fa fa-calendar" aria-hidden="true"></i>
                                         <?php echo date("D, d/m/'y", strtotime($blogpost->postdate)); ?> | <?php echo $category->name; ?>
                                     </span>

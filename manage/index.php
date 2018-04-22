@@ -2,8 +2,8 @@
 if (!isset($_SESSION)) {
     session_start();
 }
-include_once '../database/CategoryDB.php';
-include_once '../database/BlogpostDB.php';
+require_once '../database/CategoryDB.php';
+require_once '../database/BlogpostDB.php';
 
 if (!isset($_SESSION['isadmin']) || $_SESSION['isadmin'] == 0) {
     $_SESSION['message'] = "ACCESS DENIED! You are not logged in or are not an admin.";

@@ -160,7 +160,7 @@ class BlogpostDB {
         }
         else { // Blogpost title doesn't already exist in the database, proceed...
 //            Add blohpost to the database
-            var_dump($blogpost);
+            //var_dump($blogpost);
             if (self::insert($blogpost)){
                 $_SESSION['message'] = "Blogpost *<strong>$blogpost->title</strong>* was successfully submitted!";
                 $_SESSION['report_code']="success";

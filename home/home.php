@@ -4,7 +4,7 @@
     <h2 class="sub-title pb-4 pt-4">Most Popular Posts</h2>
     <hr/>
 
-    <div class="row">
+    <div class="flex-row d-flex">
 
         <?php
         $listPop = BlogpostDB::getMostPopular();
@@ -22,7 +22,7 @@
                     <div class="card-body">
                         <h2 class="card-title"><?php echo $blogpost->title; ?></h2>
                         <p class="text-right">By <?php echo $author->first_name . "," . $author->last_name ?></p>
-                        <p align="card-text">
+                        <p align="justify" class="card-text">
                             <?php echo substr($blogpost->content, 0, 400) . "..."; ?></p>
                         <div class="card-footer text-muted">
                             <span><i class="fa fa-calendar"

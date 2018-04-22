@@ -1,8 +1,8 @@
 <?php
-include_once '../database/BlogpostDB.php';
-include_once '../database/CategoryDB.php';
-include_once '../database/UserDB.php';
-include_once '../database/CommentDB.php';
+require_once '../database/CategoryDB.php';
+require_once '../database/UserDB.php';
+require_once '../database/CommentDB.php';
+require_once '../database/BlogpostDB.php';
 
 $category_id = intval($_GET['category_id']);
 $list = BlogpostDB::getPostsByCatID($category_id);
@@ -27,7 +27,7 @@ $list = BlogpostDB::getPostsByCatID($category_id);
                     <div class="card-body">
                         <h2 class="card-title"><?php echo $blogpost->title; ?></h2>
                         <p class="text-right">By <?php echo $author->first_name . "," . $author->last_name ?></p>
-                        <p align="card-text">
+                        <p align="justify" class="card-text">
                             <?php echo substr($blogpost->content, 0, 250) . "..."; ?></p>
                         <div class="card-footer text-muted">
                             <span><i class="fa fa-calendar"
